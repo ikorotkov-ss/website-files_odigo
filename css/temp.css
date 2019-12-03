@@ -1,0 +1,55 @@
+/* 
+.benefits__card-more {
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat 95% center;
+  transition: all 0.2s;
+}
+.benefits__card-more:hover,
+.benefits__card-more:focus,
+.benefits__card-more:active {
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat right center;
+}
+
+ --------------------------------
+
+.places__view-all {
+  font-size: 16px;
+  color: #006dfe;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat 95% center;
+}
+.places__view-all:hover,
+.places__view-all:focus {
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat right center;
+  transition: all 0.2s;
+
+  opacity: 0.65; 
+}
+
+----------------------------------
+
+.tour__more {
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat 95% center;
+  transition: all 0.2s;
+}
+.tour__more:hover,
+.tour__more:focus,
+.tour__more:active {
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat right center;
+}
+
+
+
+*/
