@@ -804,6 +804,20 @@ img {
 
 /* -------------- Tours styles end -------------- */
 
-/* -------------- ____ styles start -------------- */
+/* -------------- Top styles start -------------- */
 
-/* -------------- ____ styles end -------------- */
+.top {
+  margin-bottom: 86px;
+}
+.top__title {
+  margin-bottom: 54px;
+}
+.top__card-pic {
+  position: relative;
+}
+.top__card-stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* -------------- Top styles end -------------- */
