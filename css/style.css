@@ -807,7 +807,7 @@ img {
 /* -------------- Top styles start -------------- */
 
 .top {
-  margin-bottom: 86px;
+  margin-bottom: 155px;
 }
 .top__title {
   margin-bottom: 54px;
@@ -817,10 +817,14 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 57px;
 }
+.top__card {
+  display: flex;
+  flex-direction: column;
+}
 .top__card-pic {
   position: relative;
+  margin-bottom: 45px;
 }
-
 .top__card-stats {
   display: flex;
   flex-wrap: wrap;
@@ -857,5 +861,27 @@ img {
   padding-right: 23px;
   background: url(/img/svg/comment-ico.svg) no-repeat right;
 }
+.top__card-desc {
+  margin-bottom: 31px;
+  line-height: 24px;
+}
+.top__card-more {
+  width: 118px;
+  background: #006dfe;
+  color: #fff;
+  padding: 12px 19px;
+  text-decoration: none;
+  margin: auto 0 0 0;
+}
+.top__card-more:hover,
+.top__card-more:focus,
+.top__card-more:active {
+  background: #0e66da;
+  transition: all 0.3s ease;
+}
 
 /* -------------- Top styles end -------------- */
+
+/* -------------- Video styles start -------------- */
+
+/* -------------- Video styles end -------------- */
