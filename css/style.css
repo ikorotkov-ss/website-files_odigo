@@ -532,6 +532,12 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.2s linear;
+  padding-bottom: 20px;
+  z-index: 99;
+}
+.header-active {
+  background: #0e1d28;
 }
 .header__wrapper {
   display: flex;
@@ -882,6 +888,29 @@ img {
 
 /* -------------- Top styles end -------------- */
 
-/* -------------- Video styles start -------------- */
+/* -------------- Videos styles start -------------- */
+.videos {
+  width: 100%;
+}
+.videos__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.video__item {
+  padding-top: 56.25%;
+  /* соотношение сторон 16=100 9=x    -   х=9/16*100 */
+}
+.video__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-/* -------------- Video styles end -------------- */
+/* -------------- Videos styles end -------------- */
+
+/* -------------- Footer styles start -------------- */
+/* height: 370px */
+/* -------------- Footer styles end -------------- */
