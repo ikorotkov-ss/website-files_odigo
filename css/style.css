@@ -502,10 +502,12 @@ img {
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .wrapper-full {
   max-width: 1262px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .move_arrow {
   display: inline-block;
@@ -566,6 +568,30 @@ img {
 .header__link:focus,
 .header__link:active {
   opacity: 0.75;
+}
+.header__burger {
+  display: none;
+  width: 40px;
+  height: 28px;
+  position: relative;
+}
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+.burger__line_first {
+  top: 0;
+}
+.burger__line_second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger__line_third {
+  bottom: 0;
 }
 
 /* -------------- Header styles end -------------- */
@@ -631,6 +657,7 @@ img {
   background: #0e66da;
   transition: all 0.3s ease;
 }
+
 /* -------------- Intro styles end -------------- */
 
 /* -------------- Benefits styles start -------------- */
@@ -889,6 +916,7 @@ img {
 /* -------------- Top styles end -------------- */
 
 /* -------------- Videos styles start -------------- */
+
 .videos {
   width: 100%;
 }
@@ -898,7 +926,7 @@ img {
   position: relative;
 }
 .video__item {
-  padding-top: 56.25%;
+  padding-top: 56.25%; /* 56,25% от ширины */
   /* соотношение сторон 16=100 9=x    -   х=9/16*100 */
 }
 .video__element {
@@ -912,5 +940,98 @@ img {
 /* -------------- Videos styles end -------------- */
 
 /* -------------- Footer styles start -------------- */
-/* height: 370px */
+
+.footer {
+  background: #0e1d28;
+  padding: 119px 0;
+}
+.footer__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_logo {
+  width: 50%;
+}
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+.footer__menu-title {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer__menu-link {
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.footer__menu-link:hover,
+.footer__menu-link:focus,
+.footer__menu-link:active {
+  opacity: 0.75;
+}
+
 /* -------------- Footer styles end -------------- */
+
+/* -------------- Media start -------------- */
+
+@media screen and (max-width: 767px) {
+  .header__burger {
+    display: block;
+  }
+  .header__nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 10;
+    padding: 75px;
+    transform: translateX(100%);
+    transition: 0.2s all linear;
+  }
+  .header__nav-active {
+    transform: translateX(0);
+  }
+  .header__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .header__item:last-child {
+    margin-bottom: 0;
+  }
+  .header__link {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .header__nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+  .header__nav-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+  }
+  .header__nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header__nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
