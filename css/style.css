@@ -848,13 +848,14 @@ img {
 }
 .top__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 57px;
   grid-row-gap: 57px;
 }
 .top__card {
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
 }
 .top__card-pic {
   position: relative;
@@ -987,6 +988,9 @@ img {
   .header__burger {
     display: block;
   }
+  .header__wrapper {
+    padding-top: 28px;
+  }
   .header__nav {
     width: 100%;
     height: 100%;
@@ -1036,6 +1040,23 @@ img {
   .header__nav-close-line:last-child {
     transform: translateY(-50%) rotate(-45deg);
   }
+  .intro {
+    padding-top: 120px;
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .intro__subtitle {
+    font-size: 14px;
+  }
+  .search-form__field {
+    margin-right: 0;
+    width: 100%;
+  }
+  .benefits__cards {
+    grid-column: span 3;
+  }
 }
 @media screen and (max-width: 960px) {
   .search-form__field {
@@ -1074,5 +1095,18 @@ img {
   }
   .tour__desc {
     margin-bottom: 15px;
+  }
+  .top__cards {
+    grid-column-gap: 25px;
+    grid-row-gap: 55px;
+  }
+  .top__card {
+    grid-column: span 3;
+  }
+  .top__card-pic {
+    margin-bottom: 25px;
+  }
+  .footer {
+    padding: 60px 0;
   }
 }
