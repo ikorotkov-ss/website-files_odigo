@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Odigo travel company</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body>
-    <!---------------- Header start ---------------->
-
+    <!-- Header start -->
     <header class="header">
       <div class="wrapper">
         <div class="header__wrapper">
@@ -26,16 +25,16 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#!" class="header__link">Articles</a>
+                <a href="#articles" class="header__link js-scroll">Articles</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Locations</a>
+                <a href="#locations" class="header__link js-scroll">Locations</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Videos</a>
+                <a href="#videos" class="header__link js-scroll">Videos</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Sign in</a>
+                <a href="#sign-in" class="header__link js-scroll">Sign in</a>
               </li>
             </ul>
             <div class="header__nav-close">
@@ -51,12 +50,11 @@
         </div>
       </div>
     </header>
-
-    <!---------------- Header end ---------------->
+    <!-- Header end -->
 
     <main class="main">
-      <!---------------- Intro start ---------------->
-      <section class="intro">
+      <!-- Intro start -->
+      <section class="intro" id="sign-in">
         <div class="wrapper">
           <h1 class="intro__title">
             Discover Amazing places in Japan
@@ -90,9 +88,9 @@
           </form>
         </div>
       </section>
-      <!---------------- Intro end ---------------->
+      <!-- Intro end -->
 
-      <!---------------- Benefits start ---------------->
+      <!-- Benefits start -->
       <section class="benefits">
         <div class="benefits__wrap">
           <h2 class="benefits__title ">
@@ -147,9 +145,9 @@
           </div>
         </div>
       </section>
-      <!---------------- Benefits end ---------------->
+      <!-- Benefits end -->
 
-      <!---------------- Places start ---------------->
+      <!-- Places start -->
       <section class="places">
         <div class="wrapper-full">
           <div class="places__caption">
@@ -161,80 +159,80 @@
 
           <div class="places__cards">
             <!-- Card Place 1 -->
-            <figure class="places__card places__card-size-lg">
+            <div class="places__card places__card-size-lg">
               <img
-                src="img/place1.jpg"
+                src="img/place1-min.jpg"
                 alt="Mount Fuji"
                 class="places__card-pic places__card-pic-size-lg"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Mount Fuji
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
             <!-- Card Place 2 -->
-            <figure class="places__card places__card-size-lg">
+            <div class="places__card places__card-size-lg">
               <img
-                src="img/place2.jpg"
+                src="img/place2-min.jpg"
                 alt="Kyoto"
                 class="places__card-pic places__card-pic-size-lg"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Kyoto
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
             <!-- Card Place 3 -->
-            <figure class="places__card places__card-size-sm">
+            <div class="places__card places__card-size-sm">
               <img
-                src="img/place3.jpg"
+                src="img/place3-min.jpg"
                 alt="Tokyo"
                 class="places__card-pic places__card-pic-size-sm"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Tokyo
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
             <!-- Card Place 4 -->
-            <figure class="places__card places__card-size-sm">
+            <div class="places__card places__card-size-sm">
               <img
-                src="img/place4.jpg"
+                src="img/place4-min.jpg"
                 alt="Niigata"
                 class="places__card-pic places__card-pic-size-sm"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Niigata
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
             <!-- Card Place 5 -->
-            <figure class="places__card places__card-size-sm">
+            <div class="places__card places__card-size-sm">
               <img
-                src="img/place5.jpg"
+                src="img/place5-min.jpg"
                 alt="Sapporo"
                 class="places__card-pic places__card-pic-size-sm"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Sapporo
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
           </div>
         </div>
       </section>
-      <!---------------- Places end ---------------->
+      <!-- Places end -->
 
-      <!---------------- Tours start ---------------->
-      <div class="tours">
+      <!-- Tours start -->
+      <div class="tours" id="articles">
         <div class="wrapper-full">
           <div class="tours__card tour">
             <div class="tour__pic">
-              <img src="./img/tour-1.jpg" alt="tottori" class="tour__thumb" />
+              <img src="./img/tour-1-min.jpg" alt="tottori" class="tour__thumb" />
             </div>
             <div class="tour__info">
               <h3 class="tour__title">
@@ -269,7 +267,7 @@
             </div>
             <div class="tour__pic tour__pic_mobile-first">
               <img
-                src="./img/tour-2.jpg"
+                src="./img/tour-2-min.jpg"
                 alt="Kyoto’s Arashiyama"
                 class="tour__thumb"
               />
@@ -277,10 +275,10 @@
           </div>
         </div>
       </div>
-      <!---------------- Tours end ---------------->
+      <!-- Tours end -->
 
-      <!---------------- Top start ---------------->
-      <section class="top">
+      <!-- Top start -->
+      <section class="top" id="locations">
         <div class="wrapper-full">
           <h2 class="top__title section-title">
             Today top places to visit
@@ -291,7 +289,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="/img/top-pic1.jpg"
+                  src="/img/top-pic1-min.jpg"
                   alt="NAGOYA"
                   class="top__card-thumb"
                 />
@@ -325,7 +323,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="/img/top-pic2.jpg"
+                  src="/img/top-pic2-min.jpg"
                   alt="NIIGATA"
                   class="top__card-thumb"
                 />
@@ -357,7 +355,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="/img/top-pic3.jpg"
+                  src="/img/top-pic3-min.jpg"
                   alt="OSAKA"
                   class="top__card-thumb"
                 />
@@ -390,7 +388,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="/img/top-pic4.jpg"
+                  src="/img/top-pic4-min.jpg"
                   alt="SAITAMA"
                   class="top__card-thumb"
                 />
@@ -423,7 +421,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="/img/top-pic5.jpg"
+                  src="/img/top-pic5-min.jpg"
                   alt="UENO"
                   class="top__card-thumb"
                 />
@@ -460,7 +458,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="/img/top-pic6.jpg"
+                  src="/img/top-pic6-min.jpg"
                   alt="SHIBUYA"
                   class="top__card-thumb"
                 />
@@ -491,26 +489,25 @@
           </div>
         </div>
       </section>
-      <!---------------- Top end ---------------->
+      <!-- Top end -->
 
-      <!---------------- Videos start ---------------->
-      <div class="videos">
+      <!-- Videos start -->
+      <div class="videos" id="videos">
         <div class="videos__wrapper">
           <div class="video__item">
             <iframe
               class="video__element"
               src="https://www.youtube.com/embed/F0AT_7uVbeo"
-              frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>
         </div>
       </div>
-      <!---------------- Videos end ---------------->
+      <!-- Videos end -->
     </main>
 
-    <!---------------- Footer start ---------------->
+    <!-- Footer start -->
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__item">
@@ -577,8 +574,8 @@
         </div>
       </div>
     </footer>
-    <!---------------- Footer end ---------------->
+    <!-- Footer end -->
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main-es5.min.js"></script>
   </body>
 </html>
