@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Odigo travel company</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="description" content=""/>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body>
-    <!---------------- Header start ---------------->
-
+    <!-- Header start -->
     <header class="header">
       <div class="wrapper">
         <div class="header__wrapper">
@@ -26,29 +53,38 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#!" class="header__link">Articles</a>
+                <a href="#articles" class="header__link js-scroll">Articles</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Locations</a>
+                <a href="#locations" class="header__link js-scroll"
+                  >Locations</a
+                >
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Videos</a>
+                <a href="#videos" class="header__link js-scroll">Videos</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Sign in</a>
+                <a href="#sign-in" class="header__link js-scroll">Sign in</a>
               </li>
             </ul>
+            <div class="header__nav-close">
+              <span class="header__nav-close-line"></span>
+              <span class="header__nav-close-line"></span>
+            </div>
           </nav>
+          <div class="header__burger burger">
+            <span class="burger__line burger__line_first"></span>
+            <span class="burger__line burger__line_second"></span>
+            <span class="burger__line burger__line_third"></span>
+          </div>
         </div>
       </div>
     </header>
-
-    <!---------------- Header end ---------------->
+    <!-- Header end -->
 
     <main class="main">
-      <!---------------- Intro start ---------------->
-
-      <section class="intro">
+      <!-- Intro start -->
+      <div class="intro" id="sign-in">
         <div class="wrapper">
           <h1 class="intro__title">
             Discover Amazing places in Japan
@@ -81,15 +117,13 @@
             </fieldset>
           </form>
         </div>
-      </section>
+      </div>
+      <!-- Intro end -->
 
-      <!---------------- Intro end ---------------->
-
-      <!---------------- Benefits start ---------------->
-
+      <!-- Benefits start -->
       <section class="benefits">
         <div class="benefits__wrap">
-          <h2 class="benefits__title">
+          <h2 class="benefits__title ">
             Benefits of Odigo
           </h2>
           <div class="benefits__cards">
@@ -141,88 +175,98 @@
           </div>
         </div>
       </section>
+      <!-- Benefits end -->
 
-      <!---------------- Benefits end ---------------->
-
-      <!---------------- Places start ---------------->
-
+      <!-- Places start -->
       <section class="places">
         <div class="wrapper-full">
           <div class="places__caption">
             <h2 class="places__title section-title">
               Get inspired for your next trip
             </h2>
-            <a href="#!" class="places__view-all move_arrow">VIEW ALL</a>
+            <a href="#!" class="places__view-all move_arrow ">VIEW ALL</a>
           </div>
 
           <div class="places__cards">
-            <figure class="places__card places__card-size-lg">
+            <!-- Card Place 1 -->
+            <div class="places__card places__card-size-lg">
               <img
-                src="img/place1.jpg"
+                src="img/place1-min.jpg"
                 alt="Mount Fuji"
                 class="places__card-pic places__card-pic-size-lg"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Mount Fuji
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
-            <figure class="places__card places__card-size-lg">
+            </div>
+
+            <!-- Card Place 2 -->
+            <div class="places__card places__card-size-lg">
               <img
-                src="img/place2.jpg"
+                src="img/place2-min.jpg"
                 alt="Kyoto"
                 class="places__card-pic places__card-pic-size-lg"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Kyoto
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
-            <figure class="places__card places__card-size-sm">
+            <!-- Card Place 3 -->
+            <div class="places__card places__card-size-sm">
               <img
-                src="img/place3.jpg"
+                src="img/place3-min.jpg"
                 alt="Tokyo"
                 class="places__card-pic places__card-pic-size-sm"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Tokyo
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
-            <figure class="places__card places__card-size-sm">
+            </div>
+
+            <!-- Card Place 4 -->
+            <div class="places__card places__card-size-sm">
               <img
-                src="img/place4.jpg"
+                src="img/place4-min.jpg"
                 alt="Niigata"
                 class="places__card-pic places__card-pic-size-sm"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Niigata
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
-            <figure class="places__card places__card-size-sm">
+            </div>
+
+            <!-- Card Place 5 -->
+            <div class="places__card places__card-size-sm">
               <img
-                src="img/place5.jpg"
+                src="img/place5-min.jpg"
                 alt="Sapporo"
                 class="places__card-pic places__card-pic-size-sm"
               />
-              <figcaption class="places__card-title">
+              <h3 class="places__card-title">
                 Sapporo
-              </figcaption>
+              </h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
           </div>
         </div>
       </section>
-      <!---------------- Places end ---------------->
+      <!-- Places end -->
 
-      <!---------------- Tours start ---------------->
-      <div class="tours">
+      <!-- Tours start -->
+      <div class="tours" id="articles">
         <div class="wrapper-full">
           <div class="tours__card tour">
             <div class="tour__pic">
-              <img src="./img/tour-1.jpg" alt="tottori" class="tour__thumb" />
+              <img
+                src="./img/tour-1-min.jpg"
+                alt="tottori"
+                class="tour__thumb"
+              />
             </div>
             <div class="tour__info">
               <h3 class="tour__title">
@@ -253,20 +297,319 @@
               </p>
               <a href="#" class="tour__more move_arrow">
                 VIEW PREFECTURE
-              </a></div>
-
-              <div class="tour__pic">
-                <img
-                  src="./img/tour-2.jpg"
-                  alt="Kyoto’s Arashiyama"
-                  class="tour__thumb"
-                />
-              </div>
+              </a>
+            </div>
+            <div class="tour__pic tour__pic_mobile-first">
+              <img
+                src="./img/tour-2-min.jpg"
+                alt="Kyoto’s Arashiyama"
+                class="tour__thumb"
+              />
             </div>
           </div>
         </div>
       </div>
-      <!---------------- Tours end ---------------->
+      <!-- Tours end -->
+
+      <!-- Top start -->
+      <section class="top" id="locations">
+        <div class="wrapper-full">
+          <h2 class="top__title section-title">
+            Today top places to visit
+          </h2>
+
+          <div class="top__cards">
+            <!-- Card Top 1 -->
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img
+                  src="/img/top-pic1-min.jpg"
+                  alt="NAGOYA"
+                  class="top__card-thumb"
+                />
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    NAGOYA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">
+                      221
+                    </span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top__card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas rem beatae veniam, inventore at ullam placeat.
+                Laudantium tempora quia, maiores incidunt, quis natus libero
+                dolorem tenetur sunt optio sint quos molestiae. Ut eligendi
+                voluptatum magnam quo a optio eius earum?
+              </p>
+              <a href="#!" class="top__card-more">SEE MORE</a>
+            </div>
+
+            <!-- Card Top 2 -->
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img
+                  src="/img/top-pic2-min.jpg"
+                  alt="NIIGATA"
+                  class="top__card-thumb"
+                />
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    NIIGATA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">
+                      221
+                    </span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top__card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
+              </p>
+              <a href="#!" class="top__card-more">SEE MORE</a>
+            </div>
+
+            <!-- Card Top 3 -->
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img
+                  src="/img/top-pic3-min.jpg"
+                  alt="OSAKA"
+                  class="top__card-thumb"
+                />
+
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    OSAKA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">
+                      221
+                    </span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top__card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
+              </p>
+              <a href="#!" class="top__card-more">SEE MORE</a>
+            </div>
+
+            <!-- Card Top 4 -->
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img
+                  src="/img/top-pic4-min.jpg"
+                  alt="SAITAMA"
+                  class="top__card-thumb"
+                />
+
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    SAITAMA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">
+                      221
+                    </span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top__card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
+              </p>
+              <a href="#!" class="top__card-more">SEE MORE</a>
+            </div>
+
+            <!-- Card Top 5 -->
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img
+                  src="/img/top-pic5-min.jpg"
+                  alt="UENO"
+                  class="top__card-thumb"
+                />
+
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    UENO
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">
+                      221
+                    </span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top__card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pariatur perferendis asperiores omnis vitae odio et inventore
+                natus dolores quam reiciendis consequuntur ullam id aliquam,
+                labore tempora enim nesciunt ut magnam. Aliquid repellendus iste
+                cupiditate repudiandae dicta tempore quae vel exercitationem
+                nisi illum culpa magni, expedita, aut voluptas porro possimus
+                velit.
+              </p>
+              <a href="#!" class="top__card-more">SEE MORE</a>
+            </div>
+
+            <!-- Card Top 6 -->
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img
+                  src="/img/top-pic6-min.jpg"
+                  alt="SHIBUYA"
+                  class="top__card-thumb"
+                />
+
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    SHIBUYA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">
+                      221
+                    </span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top__card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
+              </p>
+              <a href="#!" class="top__card-more">SEE MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Top end -->
+
+      <!-- Videos start -->
+      <div class="videos" id="videos">
+        <div class="videos__wrapper">
+          <div class="video__item">
+            <iframe
+              class="video__element"
+              src="https://www.youtube.com/embed/F0AT_7uVbeo"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Videos end -->
     </main>
+
+    <!-- Footer start -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__item">
+          <div class="footer_logo">
+            <img
+              src="/img/svg/odigo-logo-footer.svg"
+              alt="Logo Big"
+              class="footer__logo-pic"
+            />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <h3 class="footer__menu-title">Company</h3>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">About</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Team</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Careers</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Privacy Policy</a>
+              </li>
+            </ul>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <h3 class="footer__menu-title">Locations</h3>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Tokyo</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Kyoto</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Osaka</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Hokkaido</a>
+              </li>
+            </ul>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <h3 class="footer__menu-title">Social Media</h3>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Facebook</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Twitter</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Instagram</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Youtube</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="./js/main-es5.min.js"></script>
   </body>
 </html>
